@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        
+        <title>Minesweeper Game</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="matrixContainer"></div>
+            <div class="custom-input">
+                <label class="label" for="size">Grid Size</label>
+                <input class="insert" type="number" id="rows"  name="rows" min="1" max="15" value=10>
+                <span>x</span>
+                <input type="number" class="insert col" id="columns"  name="columns"min="1"  max="15" value=10>
+                <label class="label" for="mines">Max no. of Mines</label>
+                <input type="number" class="insert col" id="mines" name="mines"  max="200" min="1" value=25>
+                <button class="btn" onclick="createMatrix()">Create Custom Grid</button>
+
+            </div>
+            
+        </div>
+        
+        <script src="game.js"></script>
+    </body>
+</html>
